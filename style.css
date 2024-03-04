@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #8CC461;
+}
+
+.box {
+    width: 900px;
+    height: 120px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px 20px 100px 300px ;
+    display: flex;
+  }
+
+.heading{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.innerBox{
+    display: flex;
+    flex-direction: row;
+    padding-left: 380px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+}
+
+.ComputerScore{
+    width: 150px;
+    height: 120px;
+    margin-right: 2em;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    color: #656565;
+    text-align: center;
+    font-size: 20px;
+}
+
+.YourScore{
+    width: 150px;
+    height: 120px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    color: #656565;
+    text-align: center;
+    font-size: 20px;
+}
+ .innerBox p{
+    color: black;
+    font-size: 3rem;
+ }
+
+ .choosecontainer {
+    display: flex;
+}
+.secondcontainer{
+    display: none;
+}
+.image-container{
+    display: inline-block;
+    margin: 40px -300px 0px 500px;
+}
+
+.image-container .line1 {
+    width: 205px;
+    height: 15px;
+    color: #000000A3;
+    background-color: #000000A3;
+    position: absolute;
+    top: 450px;
+    left: 713px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.image-container .line2 {
+    width: 150px;
+    height: 15px;
+    color: #000000A3;
+    background-color: #000000A3;
+    position: absolute;
+    top: 548px;
+    left: 560px;
+    transform: rotate(60deg);
+    z-index: 1;
+
+}
+.line3{
+    width: 150px;
+    height: 15px;
+    color: #000000A3;
+    background-color: #000000A3;
+    position: absolute;
+    top: 552px;
+    left: 720px;
+    transform: rotate(125deg);
+    z-index: 1;
+
+}
+
+#stone{
+    cursor: pointer;
+    border: 16px solid #0074B6;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+    z-index: 2;
+}
+#scissor{
+    cursor: pointer;
+    border: 16px solid #BD00FF;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+    padding: 7px 7px 7px 7px;
+    z-index: 2;
+
+}
+#paper{
+    cursor: pointer;
+    border: 16px solid #FFA943;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+    /* margin: 240px 0px 0px 60px; */
+    margin: 90px 0px 0px 660px;
+    z-index: 2;
+}
+
+
+#boxHeading{
+   font-size: 30px;
+   text-align: center;
+   margin-top: 13px;
+   position: relative;
+}
+
+#rulesButton{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid white;
+    color: #ffffff;
+    background-color: transparent;
+    margin-left: 80rem; 
+    width: 6rem; 
+    cursor: pointer; 
+    margin-top: 30px; 
+}
+
+#rulesBox {
+    border: 6px solid rgb(255, 255, 255);
+    padding: 10px;
+    overflow: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #004429;
+    color: #ffffff;
+    border-radius: 1rem;
+    Width:278px;
+    Height:355px;
+    Top:330px;
+    Left:1300px;
+    text-align: center;
+}
+  
+.rules ul{
+    list-style-type: square;
+}
+.rules ul li{
+    margin-bottom: 10px;
+}
+.rules ul li::marker{
+    color: #FFD600;
+    font-size: 1.5rem;
+}
+  #closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: red;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+  }
+
+  #nextButton{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid white;
+    color: #ffffff;
+    background-color: transparent;
+    margin-left: 88rem; 
+    margin-top: -28px;
+    width: 6rem;  
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #userChoice{
+    color: #ffffff;
+    width: 113px;
+    height: 16px;
+    top: 344px; 
+    left: 333px;
+}
+
+#pcChoice{
+    color: #ffffff;
+    width: 100px;
+    height: 16px;
+    top: 344px;
+    left: 867px;
+}
+
+#result{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.displayResult {
+    display: none;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.loose {
+    padding: 1rem;
+    margin: 3rem 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+    border: 16px solid #FFA943
+}
+.yourpick h5, .pcpick h5{
+    position: relative;
+    color:#FFFFFF;
+    font-size: 1rem;
+    z-index: 2;
+}
+.win {
+    color: white;
+    position: absolute;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 16px solid #BD00FF;
+    box-shadow: -1px 1px 11px 0px #00000059, 0 0 0 5rem #1DA82BC9, 0 0 0 4rem #2E9A2563, 0 0 0 2rem #3B6720;
+    z-index: 0;
+}
+.gameresult{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 10rem;
+}
+.gameresult h2{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.gameresult h3{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.playAgain{
+    color: #6B6B6B;
+    background: #FFFFFF;
+    border: 0;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.tie{
+    padding: 1rem;
+    margin: 3rem 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+    border: 16px solid #0074B6
+}
+/*HURRAY PAGE*/
+#trophy{
+    top: 250px;
+    margin-left: -350px;
+    position: absolute;
+}
+
+#stars{
+    margin-left: 450px;
+    top: 100px;
+    position: relative;
+}
+.hurray{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 500px 0px 0px -350px;
+    /* text-align: center; */
+}
+#playagainwin{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid white;
+    color: #8CC461; 
+    background-color:#ffffff;
+    margin: 600px 0px 0px -190px; 
+    width: 6rem;   
+    cursor: pointer;
+}
